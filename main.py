@@ -202,7 +202,6 @@ def run(gen, config):
 
         if alive == 0:
             for i, bird in enumerate(birds):
-                print(bird.score)
                 try:
                     gen[i][1].fitness = bird.score
                 except IndexError:
